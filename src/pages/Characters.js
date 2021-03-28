@@ -5,7 +5,7 @@ import getData from '../utils/getData';
 
 const Character = async () => {
     //vista descrición personajes
-    const id = getHash();
+    const id = getHash();// obetenemos el #
     const character = await getData(id);
   
     const { image, name,  episode, status, species, gender, origin, location} = character;
